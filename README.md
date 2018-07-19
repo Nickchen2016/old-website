@@ -6,6 +6,6 @@ This is my old graphic design website
 
 https://graphic-design-webpage.herokuapp.com/contact.html
 
-## App Screen Shoot 
+## Page Screen Shoot 
 
 <img src='Image/mockup.jpg' width='50%'/>
