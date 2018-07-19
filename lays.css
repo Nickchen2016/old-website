@@ -1,0 +1,492 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 96.6666%;
+	padding-left: 1.6666%;
+	padding-right: 1.6666%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	background-color: #FC0;
+}
+#logo {
+	clear: both;
+	float: left;
+	width: 82.7586%;
+	display: block;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+#Nav1 {
+	clear: both;
+	float: left;
+	margin-left: 1.5%;
+	width: 31.0344%;
+	display: block;
+	margin-bottom:10px;
+}
+#Nav2 {
+	clear: none;
+	float: left;
+	margin-left: 2%;
+	width: 31.0344%;
+	display: block;
+	margin-bottom:10px;
+}
+#Nav3 {
+	clear: none;
+	float: left;
+	margin-left: 2%;
+	width: 31.0344%;
+	display: block;
+	margin-bottom:10px;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	color: #2f559a;
+	text-align: center;
+	height: 16px;
+	margin-top: 2px;
+	background-color: #f8f8f8;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FFF;
+}
+#product {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+#text {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 6%;
+}
+#title {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 31.0344%;
+	display: block;
+	font-family: "Maiandra Black Italic GD";
+	color: #2f559a;
+	font-size: 15px;
+	text-align: left;
+	padding-left: 8px;
+}
+#type {
+	clear: none;
+	float: right;
+	margin-left: 3.4482%;
+	width: 48.2758%;
+	display: block;
+	margin-right: 5px;
+}
+#description {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	text-align: left;
+	padding-left: 8px;
+	padding-right: 10px;
+	color: #2f559a;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	font-style: normal;
+}
+#sign {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 13.7931%;
+	display: block;
+	margin-top: 12%;
+	position: fixed;
+}
+#year {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: left;
+	padding-left: 8px;
+	margin-top: 1%;
+}
+::selection {
+       background-color: #ffc50b;
+       color: #FFF;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 98%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	background-color: #FC0;
+}
+#logo {
+	clear: both;
+	float: left;
+	width: 38.7755%;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	margin-left:5px;
+}
+#Nav1 {
+	clear: none;
+	float: left;
+	margin-left: 1.5%;
+	width: 18.3673%;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+#Nav2 {
+	clear: none;
+	float: left;
+	margin-left: 1.5%;
+	width: 18.3673%;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#Nav3 {
+	clear: none;
+	float: left;
+	margin-left: 1.5%;
+	width: 18.3673%;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	color: #2f559a;
+	text-align: center;
+	height: 16px;
+	margin-top: 2px;
+	background-color: #f8f8f8;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top: 20px;
+}
+#product {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-top: 0%;
+}
+#text {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top: 2%;
+	margin-bottom: 6%;
+}
+#title {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+	font-family: "Maiandra Black Italic GD";
+	font-size: 25px;
+	font-style: normal;
+	color: #2f559a;
+	text-align: left;
+}
+#type {
+	clear: none;
+	float: right;
+	margin-left: 2.0408%;
+	width: 38.7755%;
+	display: block;
+}
+#description {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	text-align: left;
+	color: #2f559a;
+	padding-left: 8px;
+	padding-right: 12px;
+	padding-top: 2%;
+	padding-bottom: 4%;
+}
+#sign {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 8.1632%;
+	display: block;
+	margin-top: 12%;
+	position: fixed;
+}
+#year {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: left;
+	padding-left: 8px;
+	padding-top: 2px;
+}
+::selection {
+       background-color: #ffc50b;
+       color: #FFF;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 98.3333%;
+	max-width: 1232px;
+	padding-left: 0.8333%;
+	padding-right: 0.8333%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	background-color: #FC0;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 40.6779%;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	}
+#Nav1 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 15.2542%;
+	display: block;
+	margin-top: 35px;
+	margin-left: 30px;
+	margin-bottom:20px;
+}
+#Nav2 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 15.2542%;
+	display: block;
+	margin-top: 35px;
+	margin-bottom:20px;
+	}
+#Nav3 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 15.2542%;
+	display: block;
+	margin-top: 35px;
+	margin-bottom:20px;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	color: #2f559a;
+	text-align: center;
+	margin-top: 0px;
+	height: 16px;
+	background-color: #f8f8f8;
+	}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FFF;
+	margin-top: 20px;
+	}
+#product {
+	clear: both;
+	float: left;
+	width: 83.0508%;
+	display: block;
+	text-align: center;
+	margin-left: 8.4745%;
+	margin-top: 9%;
+}
+#text {
+	clear: both;
+	float: left;
+	margin-left: 8.4745%;
+	width: 83.0508%;
+	display: block;
+	margin-top: 2%;
+	margin-bottom: 8%;
+	}
+#title {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 49.1525%;
+	display: block;
+	font-family: "Maiandra Black Italic GD";
+	font-size: 36px;
+	font-style: normal;
+	color: #2f559a;
+	text-align: left;
+	margin-top: -4px;
+	margin-bottom: -4px;
+	}
+#type {
+	clear: none;
+	float: right;
+	margin-left: 1.6949%;
+	width: 40.6779%;
+	display: block;
+	margin-right: 10px;
+	}
+#description {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	margin-top: 0%;
+	text-align: left;
+	color: #2f559a;
+	}
+#sign {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 6.7796%;
+	display: block;
+	margin-top: 16%;
+	position: fixed;
+	}
+#year {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: left;
+	padding-left: 8px;
+	padding-top: 4px;
+	}
+	::selection {
+       background-color: #ffc50b;
+       color: #FFF;
+}
+}

@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 96.6666%;
+	padding-left: 1.6666%;
+	padding-right: 1.6666%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 4%;
+	width: 100%;
+	display: block;
+	font-family: "Maiandra Black Italic GD";
+	font-size: 18px;
+	margin-top: 8%;
+	margin-bottom: 20%;
+	margin-right: 4%;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	background-color: #2b2b8a;
+	background-repeat: repeat-x;
+	background-position: center;
+}
+::selection {
+       background-color: #ffc50b;
+       color: #FFF;
+}
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 98%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 6%;
+	width: 100%;
+	display: block;
+	font-family: "Maiandra Black Italic GD";
+	font-size: 24px;
+	margin-top: 6%;
+	margin-bottom: 18%;
+	margin-right: 6%;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #2b2b8a;
+}
+::selection {
+       background-color: #ffc50b;
+       color: #FFF;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 98.3333%;
+	max-width: 1232px;
+	padding-left: 0.8333%;
+	padding-right: 0.8333%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 4%;
+	width: 100%;
+	display: block;
+	margin-top: 5%;
+	margin-bottom: 8%;
+	font-family: "Maiandra Black Italic GD";
+	font-size: 36px;
+	margin-right: 4%;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+::selection {
+       background-color: #ffc50b;
+       color: #FFF;
+}
+}

@@ -1,0 +1,710 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+/*
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 96.6666%;
+	padding-left: 1.6666%;
+	padding-right: 1.6666%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FC3;
+	text-align: center;
+}
+#logo {
+	clear: both;
+	float: left;
+	width: 82.7586%;
+	display: block;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+#Nav1 {
+	clear: both;
+	float: left;
+	margin-left: 1.5%;
+	width: 31.0344%;
+	display: block;
+	margin-bottom:10px;
+}
+#Nav2 {
+	clear: none;
+	float: left;
+	margin-left: 2%;
+	width: 31.0344%;
+	display: block;
+	margin-bottom:10px;
+}
+#Nav3 {
+	clear: none;
+	float: left;
+	margin-left: 2%;
+	width: 31.0344%;
+	display: block;
+	margin-bottom:10px;
+}
+#signbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#sign {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 82.7586%;
+	display: block;
+	text-align: left;
+	margin-top: 3.5%;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w4 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w5 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w6 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#w8 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w9 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w7 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w10 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w11 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w12 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	color: #2f559a;
+	text-align: center;
+	height: 16px;
+	margin-top: 3px;
+}
+#social {
+	clear: none;
+	float: left;
+	margin-left: 3.4482%;
+	width: 42%;
+	display: block;
+	margin-top: 2%;
+	margin-bottom: 1%;
+}
+#ins {
+	clear: both;
+	float: left;
+	margin-left: 2%;
+	width: 31.0344%;
+	display: block;
+	text-align: center;
+}
+#in {
+	clear: none;
+	float: left;
+	margin-left: 1.4482%;
+	width: 33%;
+	display: block;
+	text-align: center;
+}
+#fb {
+	clear: none;
+	float: left;
+	margin-left: 1.4482%;
+	width: 31.0344%;
+	display: block;
+	text-align: center;
+}
+#like {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 54%;
+	display: block;
+	text-align: right;
+	margin-top: 4%;
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 98%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FC3;
+	text-align: center;
+}
+#logo {
+	clear: both;
+	float: left;
+	width: 38.7755%;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	margin-left:5px;
+}
+#Nav1 {
+	clear: none;
+	float: left;
+	margin-left: 1.5%;
+	width: 18.3673%;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+#Nav2 {
+	clear: none;
+	float: left;
+	margin-left: 1.5%;
+	width: 18.3673%;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#Nav3 {
+	clear: none;
+	float: left;
+	margin-left: 1.5%;
+	width: 18.3673%;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#signbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#sign {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+	text-align: left;
+	margin-top: 1.5%;
+	margin-bottom: 0.5%;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#w1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+}
+#w2 {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+}
+#w3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+	margin-top:10px;
+}
+#w4 {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+	margin-top:10px;
+}
+#w5 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+	margin-top:10px;
+}
+#w6 {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+	margin-top:10px;
+}
+
+#w8 {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+	margin-top:10px;
+}
+#w9 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+	margin-top:10px;
+}
+#w7 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+	margin-top:10px;
+}
+#w10 {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+	margin-top:10px;
+}
+#w11 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+	margin-top:10px;
+}
+#w12 {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+	margin-top:10px;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	color: #2f559a;
+	text-align: center;
+	height: 16px;
+	margin-top: 3px;
+}
+
+#social {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.9795%;
+	display: block;
+	margin-top: 0%;
+}
+#ins {
+	clear: both;
+	float: left;
+	margin-left: 8%;
+	width: 28.5714%;
+	display: block;
+	text-align: center;
+}
+#in {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 28.5714%;
+	display: block;
+	text-align: center;
+}
+#fb {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 28.5714%;
+	display: block;
+	text-align: center;
+}
+#like {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+	text-align: right;
+	margin-top: 1.5%;
+}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 98.3333%;
+	max-width: 1232px;
+	padding-left: 0.8333%;
+	padding-right: 0.8333%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FC3;
+	text-align: center;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 40.6779%;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	}
+#Nav1 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 15.2542%;
+	display: block;
+	margin-top: 35px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+#Nav2 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 15.2542%;
+	display: block;
+	margin-top: 35px;
+	margin-bottom: 20px;
+	}
+#Nav3 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 15.2542%;
+	display: block;
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+#signbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+#sign {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 32.2033%;
+	display: block;
+	text-align: left;
+	margin-top: 1.6%;
+}
+#social {
+	clear: none;
+	float: right;
+	margin-left: 1.6949%;
+	width: 23.7288%;
+	display: block;
+	margin-top: 1.3%;
+	margin-bottom: 1%;
+	}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	}
+#w1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 32.2033%;
+	display: block;
+	}
+#w2 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 32.2033%;
+	display: block;
+	}
+#w3 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 32.2033%;
+	display: block;
+	margin-top:0px;
+	}
+#w4 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 32.2033%;
+	display: block;
+	margin-top:20px;
+	}
+#w5 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 32.2033%;
+	display: block;
+	margin-top:20px;
+	}
+#w6 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 32.2033%;
+	display: block;
+	margin-top:20px;
+	}
+
+#w8 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 32.2033%;
+	display: block;
+	margin-top:20px;
+	}
+#w9 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 32.2033%;
+	display: block;
+	margin-top:20px;
+	}
+#w7 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 32.2033%;
+	display: block;
+	margin-top:20px;
+	}
+#w10 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 32.2033%;
+	display: block;
+	margin-top:20px;
+	}
+#w11 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 32.2033%;
+	display: block;
+	margin-top:20px;
+	}
+#w12 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 32.2033%;
+	display: block;
+	margin-top:20px;
+	}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	color: #2f559a;
+	text-align: center;
+	margin-top: 3px;
+	height: 16px;
+	}
+#ins {
+	clear: both;
+	float: left;
+	width: 23.7288%;
+	display: block;
+	text-align: center;
+	margin-left: 13%;
+	}
+#in {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 23.7288%;
+	display: block;
+	text-align: center;
+	}
+#fb {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 23.7288%;
+	display: block;
+	text-align: center;
+	}
+#like {
+	clear: none;
+	float: right;
+	margin-left: 0%;
+	width: 6.7796%;
+	display: block;
+	margin-top: 2%;
+	margin-right: 4%;
+	}
+
+}

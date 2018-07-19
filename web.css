@@ -1,0 +1,578 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 96.6666%;
+	padding-left: 1.6666%;
+	padding-right: 1.6666%;
+}
+#slider {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FFF;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	background-color: #FC0;
+}
+#logo {
+	clear: both;
+	float: left;
+	width: 82.7586%;
+	display: block;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+#Nav1 {
+	clear: both;
+	float: left;
+	margin-left: 1.5%;
+	width: 31.0344%;
+	display: block;
+	margin-bottom:10px;
+}
+#Nav2 {
+	clear: none;
+	float: left;
+	margin-left: 2%;
+	width: 31.0344%;
+	display: block;
+	margin-bottom:10px;
+}
+#Nav3 {
+	clear: none;
+	float: left;
+	margin-left: 2%;
+	width: 31.0344%;
+	display: block;
+	margin-bottom:10px;
+}
+#text {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	padding-left: 4%;
+}
+#title {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Maiandra Black Italic GD";
+	font-size: 16px;
+	font-style: normal;
+	color: #2f559a;
+}
+#type {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 82.7586%;
+	display: block;
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+#description {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	color: #2f559a;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	color: #2f559a;
+	text-align: center;
+}
+#year {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 82.7586%;
+	display: block;
+	margin-top: -4%;
+	margin-bottom: 1%;
+}
+#pager {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	z-index: 99;
+	margin-top: 1%;
+}
+#pager a {width: 20px;
+		  height:20px;
+		  display:inline-block;
+		  position: relative;
+		  background-color:#FC0;
+		 
+		  margin: 0 10px;
+		  border-radius:20px;
+		  font-size: 0em;
+		  color:transparent;
+}
+#pager a.activeSlide {background-color:#f15a22;}
+#sign {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 13.7931%;
+	display: block;
+	margin-top: 8%;
+	position: fixed;
+	z-index:99;
+}
+#tag {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-bottom: 8%;
+	color: #999;
+}
+::selection {
+       background-color: #ffc50b;
+       color: #FFF;
+}
+#back {
+       clear: both;
+       float: left;
+       margin-left: 0;
+       width: 100%;
+       display: block;
+}
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 98%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+#slider {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #FFF;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	background-color: #FC0;
+}
+#logo {
+	clear: both;
+	float: left;
+	width: 38.7755%;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	margin-left:5px;
+}
+#Nav1 {
+	clear: none;
+	float: left;
+	margin-left: 1.5%;
+	width: 18.3673%;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+#Nav2 {
+	clear: none;
+	float: left;
+	margin-left: 1.5%;
+	width: 18.3673%;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#Nav3 {
+	clear: none;
+	float: left;
+	margin-left: 1.5%;
+	width: 18.3673%;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#text {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	padding-left: 2%;
+}
+
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-family: "Myriad Pro";
+	color: #2f559a;
+}
+
+#title {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Maiandra Black Italic GD";
+	font-size: 18px;
+	font-style: normal;
+	color: #2f559a;
+}
+#type {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+#description {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-bottom: 1%;
+}
+#year {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top: -2%;
+}
+#pager {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	z-index: 99;
+	margin-top: 1%;
+}
+#pager a {width: 20px;
+		  height:20px;
+		  display:inline-block;
+		  position: relative;
+		  background-color:#FC0;
+		 
+		  margin: 0 10px;
+		  border-radius:20px;
+		  font-size: 0em;
+		  color:transparent;
+}
+#pager a.activeSlide {background-color:#f15a22;}
+#sign {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 8.1632%;
+	display: block;
+	z-index:99;
+}
+#tag {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-bottom: 6%;
+	color: #999;
+}
+::selection {
+       background-color: #ffc50b;
+       color: #FFF;
+}
+#back {
+       clear: both;
+       float: left;
+       margin-left: 0;
+       width: 100%;
+       display: block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 98.3333%;
+	max-width: 1232px;
+	padding-left: 0.8333%;
+	padding-right: 0.8333%;
+	margin: auto;
+}
+#slider {
+	clear: both;
+	float: left;
+	width: 74.5762%;
+	display: block;
+	text-align: center;
+	margin-left: 15%;
+	margin-top: 10%;
+}
+#content {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top: 20px;
+	background-color: #FFF;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	background-color: #FC0;
+}
+#logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 40.6779%;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	}
+#Nav1 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 15.2542%;
+	display: block;
+	margin-top: 35px;
+	margin-left: 30px;
+	margin-bottom:20px;
+}
+#Nav2 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 15.2542%;
+	display: block;
+	margin-top: 35px;
+	margin-bottom:20px;
+	}
+#Nav3 {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 15.2542%;
+	display: block;
+	margin-top: 35px;
+	margin-bottom:20px;
+}
+#text {
+	clear: both;
+	float: left;
+	width: 74.5762%;
+	display: block;
+	margin-bottom: 4%;
+	margin-left: 8.4745%;
+	padding-left: 5%;
+}
+#year {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 91.5254%;
+	display: block;
+	margin-bottom: 2%;
+	margin-top: -1%;
+}
+#title {
+	clear: both;
+	float: left;
+	margin-left: 0%;
+	width: 91.5254%;
+	display: block;
+	font-family: "Maiandra Black Italic GD";
+	font-size: 24px;
+	font-style: normal;
+	color: #2f559a;
+	margin-bottom: 0px;
+}
+#type {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 49.1525%;
+	display: block;
+	margin-top: 0%;
+	margin-bottom: 2%;
+}
+#description {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 91.5254%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	color: #2f559a;
+	margin-top: 0%;
+	margin-bottom: 1%;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-style: normal;
+	color: #2f559a;
+	text-align: center;
+}
+#pager {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	z-index: 99;
+	margin-top: 1%;
+}
+#pager a {width: 20px;
+		  height:20px;
+		  display:inline-block;
+		  position: relative;
+		  background-color:#FC0;
+		 
+		  margin: 0 10px;
+		  border-radius:20px;
+		  font-size: 0em;
+		  color:transparent;
+}
+#pager a.activeSlide {background-color:#f15a22;}
+#sign {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 6.7796%;
+	display: block;
+	margin-top: 15%;
+	position: fixed;
+	z-index:99;
+}
+#tag {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	color: #999;
+}
+::selection {
+       background-color: #ffc50b;
+       color: #FFF;
+}
+#back {
+       clear: both;
+       float: left;
+       margin-left: 0;
+       width: 100%;
+       display: block;
+}
+}
