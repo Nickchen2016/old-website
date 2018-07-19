@@ -4,7 +4,7 @@ This is my old graphic design website
 
 ## Heroku Link to My Page
 
-https://graphic-design-webpage.herokuapp.com/contact.html
+https://graphic-design-webpage.herokuapp.com/index.html
 
 ## Page Screen Shoot 
 
